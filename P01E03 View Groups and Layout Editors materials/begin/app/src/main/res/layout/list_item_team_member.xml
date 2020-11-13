@@ -18,17 +18,22 @@
     android:id="@+id/teamMemberLogin"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-      android:paddingStart="@dimen/padding_standard"
-      android:paddingEnd="@dimen/padding_standard"
-      android:paddingTop="@dimen/padding_standard"
-      android:paddingBottom="@dimen/padding_standard"
+      android:padding="@dimen/padding_standard"
       android:textSize="@dimen/login_text_size"
+      android:layout_toEndOf="@id/teamMemberAvatar"
+      android:layout_centerVertical="true"
     tools:text="login" />
 
   <TextView
       android:id="@+id/teamMemberType"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="TextView" />
+      android:layout_alignBaseline="@id/teamMemberLogin"
+      android:layout_alignParentEnd="true"
+      android:layout_marginStart="@dimen/padding_standard"
+      android:layout_marginEnd="@dimen/padding_standard"
+      android:text="TextView"
+      android:gravity="end"
+      android:textSize="@dimen/type_text_size" />
 
 </RelativeLayout>
